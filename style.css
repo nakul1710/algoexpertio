@@ -1,9 +1,17 @@
-main{
-    color:red;
-    border:2px solid black;
+div{
+    background-color: lightblue;
+    width:30%;
+    height:6em;
+    border-radius:12px;
+    padding:12px;
+    margin:4em;
+    /* transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s; */
+    transition: width 1s ease 1s,transform 1s ease 0s;
 }
-button {
-    all:inherit;
-    color:unset;
-    /* border:revert; */
+div:hover{
+    width:50%;
+    transform: rotate(180deg);
 }
