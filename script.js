@@ -53,6 +53,19 @@ console.log(set);
  console.log(arr);
  console.log(typeof arr);
 
+//functions
+
+function addTwo(num = -1) {
+ return num + 2;
+}
+console.log(addTwo());
+
+function callFunc(func, param){
+  console.log(func(param))
+}
+callFunc(addTwo, 13);
+console.log(typeof addTwo);
+
  
 
 
