@@ -94,6 +94,36 @@ switch(myNum){
 }
 
 const myRun = 10;
-console.log(myNum > 5 ? 'Greater than 5': 'less than 5')
+console.log(myRun > 5 ? 'Greater than 5': 'less than 5')
+
+// this is the single line comment
+/* this is a
+double line
+comment*/
+
+console.log('value');
+console.error('error message');
+console.debug('debug message');
+console.table([[1,2],['Hello','World']]);
 
 
+console.count('key');
+console.count('key');
+console.countReset('key');
+console.count('key');
+
+console.time('key');
+for(let i=0; i < 10000; i++){}
+console.timeEnd('key');
+
+console.time();
+for(let i=0; i < 10000; i++){}
+console.timeLog();
+
+
+function foo() {
+    'use strit'
+    x = 5;
+}
+
+foo('key');
