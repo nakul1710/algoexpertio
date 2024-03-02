@@ -5,13 +5,21 @@ div{
     border-radius:12px;
     padding:12px;
     margin:4em;
-    /* transition-property: width;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-delay: 1s; */
-    transition: width 1s ease 1s,transform 1s ease 0s;
+    animation-name: moves;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    animation-iteration-count: 2;
+    animation-play-state: running;
+    
+    animation-timing-function: linear;
+    
 }
-div:hover{
-    width:50%;
-    transform: rotate(180deg);
+@keyframes moves {
+    50%{
+     transform: translate(200px, 0px)
+    }
+    100%{
+     transform: translate(200px, 300px);
+    }
 }
