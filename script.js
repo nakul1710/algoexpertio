@@ -66,13 +66,34 @@ function callFunc(func, param){
 callFunc(addTwo, 13);
 console.log(typeof addTwo);
 
- 
+//looping
+for(let i=0; i<4; i++){
+    console.log(i);
+    if(i == 1){
+        break;
+    }
+} 
 
 
+let i = 0;
+while(i<4){
+    console.log(i);
+    i++
+}
 
+const myNum = 2;
+switch(myNum){
+    case 1:
+        console.log('It was 1')
+       
+    case 2:
+        console.log('It was 2')
+        break;
+    default: 
+       console.log('Default')
+}
 
-
-
-
+const myRun = 10;
+console.log(myNum > 5 ? 'Greater than 5': 'less than 5')
 
 
