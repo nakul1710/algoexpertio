@@ -1,4 +1,5 @@
-let str = 'abcd';
+//strings
+let str = 'a,b,c,d';
 console.log(str + 'efgh');
 console.log(str < 'efg');
 console.log("hello\nworld ");
@@ -14,5 +15,39 @@ console.log(str.substr(1));
 console.log(str.slice(1,3))
 console.log(str.padStart(6,'$'))
 console.log(str.padEnd(6,'$'))
+console.log(str.trimEnd());
+console.log(str.trimStart());
+console.log(str.split(','))
+
+//Objects
+
+const person = {
+    name: 'nakul',
+    course: 'frontend',
+}
+console.log(person);
+console.log( typeof JSON.stringify(person));
+console.log(typeof JSON.parse(JSON.stringify(person)))
+console.log(person.course);
+person.course = 'backend';
+console.log(person.course);
+
+const map = new Map();
+map.set(456, 'hello');
+map.set(123, 'world');
+console.log(map.get(123))
+console.log(map.size);
+
+const set = new Set ();
+set.add('Hello');
+set.add('World');
+set.delete('Hello')
+console.log(set.has('Hello'))
+console.log(set)
+
+
+
+
+
 
 
