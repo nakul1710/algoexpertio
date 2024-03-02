@@ -43,7 +43,19 @@ set.add('Hello');
 set.add('World');
 set.delete('Hello')
 console.log(set.has('Hello'))
-console.log(set)
+console.log(set);
+
+
+//Array
+ let arr = [1,2,3,4,5];
+ arr.push(6);
+ console.log(arr.length);
+ console.log(arr);
+ console.log(typeof arr);
+
+ 
+
+
 
 
 
