@@ -6,7 +6,7 @@ arr[2] = 10;
 console.log(arr);
 console.log(arr.includes(10))
 console.log(arr.indexOf(10))
-console.log(arr.lastIndexOf(1))
+console.log(arr.lastIndexOf(2))
 arr.push(5,6,9);
 console.log(arr);
 arr.pop();
