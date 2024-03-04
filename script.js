@@ -126,4 +126,14 @@ function foo() {
     x = 5;
 }
 
-foo('key');
+foo();
+// variables and scooping
+function test() {
+
+const arr = [1,2,3]
+arr.push(4);
+console.log(arr);
+  
+  
+}
+test()
