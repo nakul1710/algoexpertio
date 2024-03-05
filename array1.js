@@ -19,6 +19,8 @@ arr.splice(2,3);// arr.splice(index,no. of elements that we want to cut);
 console.log(arr);
 const newArr = arr.concat('hello','world');
 console.log(newArr);
+arr.reverse();
+console.log(arr);
 
 
 
