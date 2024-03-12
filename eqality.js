@@ -4,7 +4,7 @@ console.log(true == 1);
 console.log(false == 0);
 console.log(Boolean(10));
 console.log(typeof String(2));
-console.log(Number('abc'));
+console.log(Number('abc')); //nan
 console.log(NaN == NaN); 
 console.log(null == undefined);
 console.log(null == null); 
