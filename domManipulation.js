@@ -21,11 +21,26 @@
 // listItem[0].classList.toggle('big');
 // listItem[0].classList.toggle('big');
 // listItem[0].classList.toggle('big');//Alternately remove or add.
-const listItem = document.querySelectorAll('li');
-const text = document.createTextNode('Hello World');
-p.append(text);
-console.log(document.querySelector('ol').innerHTML);
-document.body.prepend(p);
+
+
+
+
+// const listItem = document.querySelectorAll('li');
+// const text = document.createTextNode('Hello World');
+// p.append(text);
+// console.log(document.querySelector('ol').innerHTML);
+// document.body.prepend(p);
+const parent = document.querySelector('ol');
+const fragment = documnet.createDocumnetFragment();
+// const listItemToAdd = [];
+for(i=0; i < 3; i++){
+ const li = document.createElement('li');
+ li.textContent = `list item with i=${i}`;
+//  listItemToAdd.push(li);
+ fragment.append(li);
+}
+// parent.append(...listItemToAdd);
+parent.append(fragment);
 
 
 
