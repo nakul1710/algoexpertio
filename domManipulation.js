@@ -30,18 +30,28 @@
 // p.append(text);
 // console.log(document.querySelector('ol').innerHTML);
 // document.body.prepend(p);
-const parent = document.querySelector('ol');
-const fragment = documnet.createDocumnetFragment();
-// const listItemToAdd = [];
-for(i=0; i < 3; i++){
- const li = document.createElement('li');
- li.textContent = `list item with i=${i}`;
-//  listItemToAdd.push(li);
- fragment.append(li);
-}
-// parent.append(...listItemToAdd);
-parent.append(fragment);
+// const parent = document.querySelector('ol');
+// const fragment = documnet.createDocumnetFragment();
+// // const listItemToAdd = [];
+// for(i=0; i < 3; i++){
+//  const li = document.createElement('li');
+//  li.textContent = `list item with i=${i}`;
+// //  listItemToAdd.push(li);
+//  fragment.append(li);
+// }
+// // parent.append(...listItemToAdd);
+// parent.append(fragment);
 
+const listItem = document.querySelectorAll('li');
+// console.log(window.innerHeight);
+// console.log(listItem[0].style.fontsize);
+// console.log(window.getComputedStyle(listItem[0]).fontSize);
+// listItem[0].classList.add('big');
+const scrollable = document.getElementById('scrollable');
+console.log(scrollable.clientHeight);
+console.log(scrollable.offsetHeight);
+console.log(scrollable.scrollHeight);
+console.log(scrollable.offsetTop);
 
 
 
